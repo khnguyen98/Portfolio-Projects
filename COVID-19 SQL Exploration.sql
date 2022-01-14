@@ -1,3 +1,7 @@
+/* 
+	Data was sourced from ourworldindata.org
+*/
+
 SELECT *
 FROM PortfolioProject..Covid_Deaths
 ORDER BY 3,4
@@ -222,7 +226,6 @@ GROUP BY deaths.location
 SELECT *, (avg_diabetes_pop + avg_65_older_pop) AS risk_pop, ((avg_diabetes_pop + avg_65_older_pop)/avg_pop)*100 AS percent_risk
 FROM RiskPop
 ORDER BY percent_risk DESC
-
 
 /*
 	Creating view to store data for visualizations
